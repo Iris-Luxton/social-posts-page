@@ -1,0 +1,34 @@
+This is exercise15 for lab 4.
+The slide for this exercise is 92 in the Module 4 slides.
+
+Your goal is to create a social posts page.
+Utilise what you have learnt here to create a rich application.
+
+Start with what you want to show, for example, a hobby of yours.
+Create requirements, do some research, perhaps use Pinterest to get some ideas.
+Prepare your lo-fi / sketches and put pictures of those in the exercise 15 folder
+Prepare your application on Figma and put your design screenshots in the exercise 15 folder
+Get coding and remember to use responsive design.
+
+Add things such as data, animations, and charts.
+
+Discuss the application with your lead trainer in order to get feedback
+
+What do we need?
+1. A visually appealing and relevant image or video: 
+This can be a photo or graphic that relates to the post and captures the attention of the viewer.
+
+2. A well-written and engaging caption: This is the text that accompanies the post 
+and should include a clear and compelling message that encourages engagement and interaction.
+
+3. A call to action: This can be a button or link that directs the viewer to take a specific action, 
+such as visiting a website or signing up for a newsletter, or to submit your comment, to like or share.
+
+4. Hashtags: These are keywords that can be used to increase the visibility of the post 
+and make it more discoverable to users searching for related content.
+
+5. Metrics: A way for you to track engagement, likes, comments, shares, etc.
+
+Responses: It's important to have a way for users to leave comments and feedback on the post, 
+and a way for you to respond to those comments. Overall, a social media post page should be visually appealing, 
+easy to read, and encourage engagement and interaction with the audience.

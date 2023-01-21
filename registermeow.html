@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <header>
+    <div>
+      <h1>Register</h1>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <nav class="navbar fixed-top navbar-expand-xl navbar-light">
+        <a href="homemeow.html" class="navbar-brand mb-0 h1">
+          <img
+            class="d-inline-block align-middle"
+            src="./meow-logo.jpg"
+            alt="logo"
+            width="20%"
+            height="20%"
+          />
+          Navbar
+        </a>
+        <button
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="./loginmeow.html" class="nav-link active">Login</a>
+            </li>
+            <form action="" class="d-flex">
+              <input type="text" class="form-control me-2" />
+              <button type="submit" class="btn btn-outline-success">
+                Search
+              </button>
+            </form>
+            <li class="nav-item active">
+              <a href="homemeow.html" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                href="#"
+                >User <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Account</a></li>
+                <li><a href="#" class="dropdown-item">Setting</a></li>
+                <li><a href="#" class="dropdown-item">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <form class="needs-validation" novalidate>
+        <!-- Adding a novalidate attribute to the form element 
+        prevents native validation on form elements -->
+        <div class="col-md-6">
+          <label for="username">Enter username</label><br />
+          <input
+            class="form-control"
+            type="text"
+            id="newname"
+            name="username"
+            placeholder="username"
+            required
+            pattern="^[A-Za-z]{1}[A-Za-z0-9]{4,}$"
+          />
+          <div class="invalid-feedback">
+            Please enter five or more characters with numbers at the end, no
+            special characters.
+          </div>
+        </div>
+
+        <br />
+        <div class="col-md-6">
+          <label for="password">Enter password</label><br />
+          <input
+            class="form-control"
+            type="text"
+            id="newpassword"
+            name="password"
+            placeholder="password"
+            required
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,}$"
+          />
+          <div class="invalid-feedback">
+            Please enter five or more characters, must start with a letter, then
+            contain at least 1 number and 1 special character.
+          </div>
+        </div>
+
+        <br />
+        <div class="col-md-6">
+          <label for="password">Confirm password</label><br />
+          <input
+            class="form-control"
+            type="text"
+            id="confirmpassword"
+            placeholder="confirm password"
+            required
+          />
+          <div class="invalid-feedback">Passwords do not match.</div>
+        </div>
+        <br />
+
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="radiocheck1"
+            name="radio-stacked"
+            required
+          />
+          <label class="form-check-label" for="radiocheck1"
+            >One time commitment</label
+          >
+        </div>
+        <div class="form-check mb-3">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="radiocheck2"
+            name="radio-stacked"
+            required
+          />
+          <label class="form-check-label" for="radiocheck2"
+            >Life time commitment</label
+          >
+          <div class="invalid-feedback">Please choose 1</div>
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn">Register</button>
+          <br>
+          <p>Already a Meower? <a href="loginmeow.html">Log in</a></p>
+        </div>
+      </form>
+      <br />
+      
+    </div>
+    <!-- <script> back up if things don't work out - don't forget to add onClick function for validateForm()
+      function validateForm() {
+        var username = document.getElementById("newname").value;
+        var password = document.getElementById("newpassword").value;
+
+        var usernameRegex = /^[A-Za-z]{1}[A-Za-z0-9]{4,}$/;
+        var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,}$/;
+
+        if (usernameRegex.test(username) && passwordRegex.test(password)) {
+          alert("Valid input");
+        } else {
+          alert("Invalid input, make sure you have:\nA username with five or more characters with numbers at the end, no special characters\nA password with five or more characters, must start with a letter, contain at least 1 number and 1 special character.");
+        }
+      }
+    </script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="register.js"></script>
+  </body>
+</html>
